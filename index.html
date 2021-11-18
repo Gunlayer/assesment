@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="red-bg-circle"></div>
+        <div class="blue-bg-circle"></div>
+        <div class="container-small">
+          <div class="logo-container">
+            <img class="logo-img" src="./images/Logo.svg" alt="logo" />
+          </div>
+        </div>
+        <div class="animation-container">
+          <h1 class="main-title">Create high-quality assessments, fast</h1>
+          <div class="undertitle-box">
+            <div class="sign-in-btn">
+              <img
+                src="./images/windows.svg"
+                alt="icon"
+                class="icon-btn-image"
+              />
+              Sign in with microsoft
+            </div>
+            <div class="icon-text-flexbox">
+              <div class="icon-container">
+                <svg
+                  class="icon dev"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="circle"
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    fill="#101010"
+                    stroke="#444444"
+                  />
+                  <path
+                    class="border"
+                    d="M19.9995 24C19.3395 24.33 18.7895 24.82 18.3795 25.43C18.1495 25.78 18.1495 26.22 18.3795 26.57C18.7895 27.18 19.3395 27.67 19.9995 28"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M26.2109 24C26.8709 24.33 27.4209 24.82 27.8309 25.43C28.0609 25.78 28.0609 26.22 27.8309 26.57C27.4209 27.18 26.8709 27.67 26.2109 28"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M20 33H26C31 33 33 31 33 26V20C33 15 31 13 26 13H20C15 13 13 15 13 20V26C13 31 15 33 20 33Z"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M13.2305 19.01L32.4505 19"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  class="icon analysis"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="circle"
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    fill="#101010"
+                    stroke="#444444"
+                  />
+                  <path
+                    class="border"
+                    d="M30.32 24.0001C32.92 24.0001 34 23.0001 33.04 19.7201C32.39 17.5101 30.49 15.6101 28.28 14.9601C25 14.0001 24 15.0801 24 17.6801V20.5601C24 23.0001 25 24.0001 27 24.0001H30.32Z"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M31.9994 26.7C31.0694 31.33 26.6294 34.69 21.5794 33.87C17.7894 33.26 14.7394 30.21 14.1194 26.42C13.3094 21.39 16.6494 16.95 21.2594 16.01"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  class="icon arch"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="circle"
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    fill="#101010"
+                    stroke="#444444"
+                  />
+                  <path
+                    class="boreder"
+                    d="M23.5007 33.0001H15.0807C13.9207 33.0001 12.9707 32.0701 12.9707 30.9301V16.0901C12.9707 13.4701 14.9207 12.2801 17.3107 13.4501L21.7507 15.6301C22.7107 16.1001 23.5007 17.3501 23.5007 18.4101V33.0001Z"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="boreder"
+                    d="M32.97 26.0602V29.8402C32.97 32.0002 31.97 33.0002 29.81 33.0002H23.5V21.4202L23.97 21.5202L28.47 22.5302L30.5 22.9802C31.82 23.2702 32.9 23.9502 32.96 25.8702C32.97 25.9302 32.97 25.9902 32.97 26.0602Z"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="boreder"
+                    d="M16.5 20.0001H19.97"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="boreder"
+                    d="M16.5 24.0001H19.97"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="boreder"
+                    d="M28.4707 22.5301V25.7501C28.4707 26.9901 27.4607 28.0001 26.2207 28.0001C24.9807 28.0001 23.9707 26.9901 23.9707 25.7501V21.5201L28.4707 22.5301Z"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="boreder"
+                    d="M32.9607 25.8702C32.9007 27.0502 31.9207 28.0002 30.7207 28.0002C29.4807 28.0002 28.4707 26.9902 28.4707 25.7502V22.5302L30.5007 22.9802C31.8207 23.2702 32.9007 23.9502 32.9607 25.8702Z"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  class="icon test"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="circle"
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    fill="#101010"
+                    stroke="#444444"
+                  />
+                  <path
+                    class="border"
+                    d="M21 27.95H17.21C13.84 27.95 13 27.11 13 23.74V17.74C13 14.37 13.84 13.53 17.21 13.53H27.74C31.11 13.53 31.95 14.37 31.95 17.74"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M21 32.4699V27.95"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M13 23.95H21"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M17.7402 32.47H21.0002"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M32.9993 23.8V29.51C32.9993 31.88 32.4093 32.47 30.0393 32.47H26.4893C24.1193 32.47 23.5293 31.88 23.5293 29.51V23.8C23.5293 21.43 24.1193 20.84 26.4893 20.84H30.0393C32.4093 20.84 32.9993 21.43 32.9993 23.8Z"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M28.2445 29.25H28.2535"
+                    stroke="#444444"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  class="icon manage"
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="circle"
+                    x="0.5"
+                    y="0.5"
+                    width="45"
+                    height="45"
+                    rx="22.5"
+                    fill="#101010"
+                    stroke="#444444"
+                  />
+                  <path
+                    class="border"
+                    d="M31 23.2V24.9C31 28.05 29.2 29.4 26.5 29.4H17.5C14.8 29.4 13 28.05 13 24.9V19.5C13 16.35 14.8 15 17.5 15H20.2C20.07 15.38 20 15.8 20 16.25V20.15C20 21.12 20.32 21.94 20.89 22.51C21.46 23.08 22.28 23.4 23.25 23.4V24.79C23.25 25.3 23.83 25.61 24.26 25.33L27.15 23.4H29.75C30.2 23.4 30.62 23.33 31 23.2Z"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M33 16.25V20.15C33 21.64 32.24 22.76 31 23.2C30.62 23.33 30.2 23.4 29.75 23.4H27.15L24.26 25.33C23.83 25.61 23.25 25.3 23.25 24.79V23.4C22.28 23.4 21.46 23.08 20.89 22.51C20.32 21.94 20 21.12 20 20.15V16.25C20 15.8 20.07 15.38 20.2 15C20.64 13.76 21.76 13 23.25 13H29.75C31.7 13 33 14.3 33 16.25Z"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M18.4004 33H25.6004"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M22 29.4V33"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M29.4955 18.25H29.5045"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M26.6947 18.25H26.7037"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="border"
+                    d="M23.8959 18.25H23.9049"
+                    stroke="#444444"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="vetical-line"></div>
+              <div class="icon-text-container">
+                <p class="icon-text icon-text_color-white">
+                  Tests for many disciplines:
+                </p>
+                <p
+                  class="icon-text icon-text_color-green text-dev text-box"
+                ></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sphere-container"></div>
+        </div>
+      </div>
+    </header>
+    <script src="./js/getSelectedIconText.js"></script>
+
+    <script id="vertexShader" type="x-shader/x-vertex">
+      void main() {
+            gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+          }
+    </script>
+    <script id="ortho-vs" type="x-shader/x-vertex">
+      varying vec2 vUv;
+          void main() {
+            vUv = uv;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 0.5 );
+          }
+    </script>
+    <script id="noiseVertexShader" type="x-shader/x-vertex">
+      //
+          // GLSL textureless classic 3D noise "cnoise",
+          // with an RSL-style periodic variant "pnoise".
+          // Author:  Stefan Gustavson (stefan.gustavson@liu.se)
+          // Version: 2011-10-11
+          //
+          // Many thanks to Ian McEwan of Ashima Arts for the
+          // ideas for permutation and gradient selection.
+          //
+          // Copyright (c) 2011 Stefan Gustavson. All rights reserved.
+          // Distributed under the MIT license. See LICENSE file.
+          // https://github.com/ashima/webgl-noise
+          //
+          vec3 mod289(vec3 x)
+          {
+          return x - floor(x * (1.0 / 289.0)) * 289.0;
+          }
+          vec4 mod289(vec4 x)
+          {
+          return x - floor(x * (1.0 / 289.0)) * 289.0;
+          }
+          vec4 permute(vec4 x)
+          {
+          return mod289(((x*34.0)+1.0)*x);
+          }
+          vec4 taylorInvSqrt(vec4 r)
+          {
+          return 1.79284291400159 - 0.85373472095314 * r;
+          }
+          vec3 fade(vec3 t) {
+          return t*t*t*(t*(t*6.0-15.0)+10.0);
+          }
+          // Classic Perlin noise
+          float cnoise(vec3 P)
+          {
+          vec3 Pi0 = floor(P); // Integer part for indexing
+          vec3 Pi1 = Pi0 + vec3(1.0); // Integer part + 1
+          Pi0 = mod289(Pi0);
+          Pi1 = mod289(Pi1);
+          vec3 Pf0 = fract(P); // Fractional part for interpolation
+          vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
+          vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
+          vec4 iy = vec4(Pi0.yy, Pi1.yy);
+          vec4 iz0 = Pi0.zzzz;
+          vec4 iz1 = Pi1.zzzz;
+          vec4 ixy = permute(permute(ix) + iy);
+          vec4 ixy0 = permute(ixy + iz0);
+          vec4 ixy1 = permute(ixy + iz1);
+          vec4 gx0 = ixy0 * (1.0 / 7.0);
+          vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;
+          gx0 = fract(gx0);
+          vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
+          vec4 sz0 = step(gz0, vec4(0.0));
+          gx0 -= sz0 * (step(0.0, gx0) - 0.5);
+          gy0 -= sz0 * (step(0.0, gy0) - 0.5);
+          vec4 gx1 = ixy1 * (1.0 / 7.0);
+          vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;
+          gx1 = fract(gx1);
+          vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
+          vec4 sz1 = step(gz1, vec4(0.0));
+          gx1 -= sz1 * (step(0.0, gx1) - 0.5);
+          gy1 -= sz1 * (step(0.0, gy1) - 0.5);
+          vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
+          vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
+          vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
+          vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
+          vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
+          vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
+          vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
+          vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
+          vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
+          g000 *= norm0.x;
+          g010 *= norm0.y;
+          g100 *= norm0.z;
+          g110 *= norm0.w;
+          vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
+          g001 *= norm1.x;
+          g011 *= norm1.y;
+          g101 *= norm1.z;
+          g111 *= norm1.w;
+          float n000 = dot(g000, Pf0);
+          float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
+          float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
+          float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
+          float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
+          float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
+          float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
+          float n111 = dot(g111, Pf1);
+          vec3 fade_xyz = fade(Pf0);
+          vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
+          vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
+          float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
+          return 1.2 * n_xyz;
+          }
+          // Classic Perlin noise, periodic variant
+          float pnoise(vec3 P, vec3 rep)
+          {
+            vec3 Pi0 = mod(floor(P), rep); // Integer part, modulo period
+            vec3 Pi1 = mod(Pi0 + vec3(1.0), rep); // Integer part + 1, mod period
+            Pi0 = mod289(Pi0);
+            Pi1 = mod289(Pi1);
+            vec3 Pf0 = fract(P); // Fractional part for interpolation
+            vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
+            vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
+            vec4 iy = vec4(Pi0.yy, Pi1.yy);
+            vec4 iz0 = Pi0.zzzz;
+            vec4 iz1 = Pi1.zzzz;
+            vec4 ixy = permute(permute(ix) + iy);
+            vec4 ixy0 = permute(ixy + iz0);
+            vec4 ixy1 = permute(ixy + iz1);
+            vec4 gx0 = ixy0 * (1.0 / 7.0);
+            vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;
+            gx0 = fract(gx0);
+            vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
+            vec4 sz0 = step(gz0, vec4(0.0));
+            gx0 -= sz0 * (step(0.0, gx0) - 0.5);
+            gy0 -= sz0 * (step(0.0, gy0) - 0.5);
+            vec4 gx1 = ixy1 * (1.0 / 7.0);
+            vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;
+            gx1 = fract(gx1);
+            vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
+            vec4 sz1 = step(gz1, vec4(0.0));
+            gx1 -= sz1 * (step(0.0, gx1) - 0.5);
+            gy1 -= sz1 * (step(0.0, gy1) - 0.5);
+            vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
+            vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
+            vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
+            vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
+            vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
+            vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
+            vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
+            vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
+            vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
+            g000 *= norm0.x;
+            g010 *= norm0.y;
+            g100 *= norm0.z;
+            g110 *= norm0.w;
+            vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
+            g001 *= norm1.x;
+            g011 *= norm1.y;
+            g101 *= norm1.z;
+            g111 *= norm1.w;
+            float n000 = dot(g000, Pf0);
+            float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
+            float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
+            float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
+            float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
+            float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
+            float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
+            float n111 = dot(g111, Pf1);
+            vec3 fade_xyz = fade(Pf0);
+            vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
+            vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
+            float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
+            return 2.0 * n_xyz;
+          }
+          varying vec3 vNormal;
+          uniform float time;
+          uniform float weight;
+          uniform float morph;
+          uniform float psize;
+
+          void main() {
+            float f = morph * pnoise( normal + time, vec3( 10.0 ) );
+            vNormal = normalize(normal);
+            vec4 pos = vec4( position + f * normal, 1.0 );
+            gl_Position = projectionMatrix * modelViewMatrix * pos;
+            gl_PointSize = psize;
+          }
+    </script>
+    <script id="fs_ZoomBlur" type="x-shader/x-vertex">
+      varying vec2 vUv;
+          uniform sampler2D tDiffuse;
+          uniform vec2 resolution;
+          uniform float strength;
+          float random(vec3 scale,float seed){return fract(sin(dot(gl_FragCoord.xyz+seed,scale))*43758.5453+seed);}
+          void main() {
+            vec2 center = .5 * resolution;
+            vec4 color = vec4(0.0);
+            float total = 0.0;
+            vec2 toCenter=center-vUv*resolution;
+            float offset=random(vec3(12.9898,78.233,151.7182),0.0);
+            for(float t=0.0;t<=50.0;t++){
+              float percent=(t+offset)/40.0;
+              float weight = 100.0*(percent-percent*percent);
+              vec4 sample=texture2D(tDiffuse,vUv+toCenter*percent*strength/resolution);
+              sample.rgb*=sample.a;
+              color+=sample*weight;
+              total+=weight;
+            }
+            gl_FragColor = color/total;
+            gl_FragColor.rgb /= gl_FragColor.a;
+            //gl_FragDepth = color;
+          }
+    </script>
+    <script id="fragmentShader" type="x-shader/x-vertex">
+      //
+          // GLSL textureless classic 3D noise "cnoise",
+          // with an RSL-style periodic variant "pnoise".
+          // Author:  Stefan Gustavson (stefan.gustavson@liu.se)
+          // Version: 2011-10-11
+          //
+          // Copyright (c) 2011 Stefan Gustavson. All rights reserved.
+          // Distributed under the MIT license. See LICENSE file.
+          // https://github.com/ashima/webgl-noise
+          //
+          vec3 mod289(vec3 x)
+          {
+          return x - floor(x * (1.0 / 289.0)) * 289.0;
+          }
+          vec4 mod289(vec4 x)
+          {
+          return x - floor(x * (1.0 / 289.0)) * 289.0;
+          }
+          vec4 permute(vec4 x)
+          {
+          return mod289(((x*34.0)+1.0)*x);
+          }
+          vec4 taylorInvSqrt(vec4 r)
+          {
+          return 1.79284291400159 - 0.85373472095314 * r;
+          }
+          vec3 fade(vec3 t) {
+          return t*t*t*(t*(t*6.0-15.0)+10.0);
+          }
+          // Classic Perlin noise
+          float cnoise(vec3 P)
+          {
+          vec3 Pi0 = floor(P); // Integer part for indexing
+          vec3 Pi1 = Pi0 + vec3(1.0); // Integer part + 1
+          Pi0 = mod289(Pi0);
+          Pi1 = mod289(Pi1);
+          vec3 Pf0 = fract(P); // Fractional part for interpolation
+          vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
+          vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
+          vec4 iy = vec4(Pi0.yy, Pi1.yy);
+          vec4 iz0 = Pi0.zzzz;
+          vec4 iz1 = Pi1.zzzz;
+          vec4 ixy = permute(permute(ix) + iy);
+          vec4 ixy0 = permute(ixy + iz0);
+          vec4 ixy1 = permute(ixy + iz1);
+          vec4 gx0 = ixy0 * (1.0 / 7.0);
+          vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;
+          gx0 = fract(gx0);
+          vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
+          vec4 sz0 = step(gz0, vec4(0.0));
+          gx0 -= sz0 * (step(0.0, gx0) - 0.5);
+          gy0 -= sz0 * (step(0.0, gy0) - 0.5);
+          vec4 gx1 = ixy1 * (1.0 / 7.0);
+          vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;
+          gx1 = fract(gx1);
+          vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
+          vec4 sz1 = step(gz1, vec4(0.0));
+          gx1 -= sz1 * (step(0.0, gx1) - 0.5);
+          gy1 -= sz1 * (step(0.0, gy1) - 0.5);
+          vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
+          vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
+          vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
+          vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
+          vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
+          vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
+          vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
+          vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
+          vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
+          g000 *= norm0.x;
+          g010 *= norm0.y;
+          g100 *= norm0.z;
+          g110 *= norm0.w;
+          vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
+          g001 *= norm1.x;
+          g011 *= norm1.y;
+          g101 *= norm1.z;
+          g111 *= norm1.w;
+          float n000 = dot(g000, Pf0);
+          float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
+          float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
+          float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
+          float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
+          float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
+          float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
+          float n111 = dot(g111, Pf1);
+          vec3 fade_xyz = fade(Pf0);
+          vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
+          vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
+          float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
+          return 2.2 * n_xyz;
+          }
+          // Classic Perlin noise, periodic variant
+          float pnoise(vec3 P, vec3 rep)
+          {
+            vec3 Pi0 = mod(floor(P), rep); // Integer part, modulo period
+            vec3 Pi1 = mod(Pi0 + vec3(1.0), rep); // Integer part + 1, mod period
+            Pi0 = mod289(Pi0);
+            Pi1 = mod289(Pi1);
+            vec3 Pf0 = fract(P); // Fractional part for interpolation
+            vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
+            vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
+            vec4 iy = vec4(Pi0.yy, Pi1.yy);
+            vec4 iz0 = Pi0.zzzz;
+            vec4 iz1 = Pi1.zzzz;
+            vec4 ixy = permute(permute(ix) + iy);
+            vec4 ixy0 = permute(ixy + iz0);
+            vec4 ixy1 = permute(ixy + iz1);
+            vec4 gx0 = ixy0 * (1.0 / 7.0);
+            vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;
+            gx0 = fract(gx0);
+            vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
+            vec4 sz0 = step(gz0, vec4(0.0));
+            gx0 -= sz0 * (step(0.0, gx0) - 0.5);
+            gy0 -= sz0 * (step(0.0, gy0) - 0.5);
+            vec4 gx1 = ixy1 * (1.0 / 7.0);
+            vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;
+            gx1 = fract(gx1);
+            vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
+            vec4 sz1 = step(gz1, vec4(0.0));
+            gx1 -= sz1 * (step(0.0, gx1) - 0.5);
+            gy1 -= sz1 * (step(0.0, gy1) - 0.5);
+            vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
+            vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
+            vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
+            vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
+            vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
+            vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
+            vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
+            vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
+            vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
+            g000 *= norm0.x;
+            g010 *= norm0.y;
+            g100 *= norm0.z;
+            g110 *= norm0.w;
+            vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
+            g001 *= norm1.x;
+            g011 *= norm1.y;
+            g101 *= norm1.z;
+            g111 *= norm1.w;
+            float n000 = dot(g000, Pf0);
+            float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
+            float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
+            float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
+            float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
+            float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
+            float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
+            float n111 = dot(g111, Pf1);
+            vec3 fade_xyz = fade(Pf0);
+            vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
+            vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
+            float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
+            return 10.0 * n_xyz;
+          }
+          varying vec3 vNormal;
+          uniform sampler2D tShine;
+          uniform float time;
+          uniform float RGBr;
+          uniform float RGBg;
+          uniform float RGBb;
+          uniform float RGBn;
+          uniform float RGBm;
+          uniform float dnoise;
+
+          float PI = 3.14159265358979323846264;
+          void main() {
+            float r = ( pnoise( RGBr * ( vNormal + time ), vec3( 10.0 ) ) );
+            float g = ( pnoise( RGBg * ( vNormal + time ), vec3( 10.0 ) ) );
+            float b = ( pnoise( RGBb * ( vNormal + time ), vec3( 10.0 ) ) );
+            float n = pnoise( -1.0 * ( vNormal + time ), vec3( 10.0 ) );
+            //n = pow( 1.0, n );
+            n = 50.0 * pnoise( (RGBn) * ( vNormal ), vec3( 10.0 ) ) * pnoise( RGBm * ( vNormal + time ), vec3( 10.0 ) );
+            n -= 0.10 * pnoise( dnoise * vNormal, vec3( 10.0 ) );
+            vec3 color = vec3( r + n, g + n, b + n );
+            gl_FragColor = vec4( color, 1.0 );
+          }
+    </script>
+    <script id="fs_Composite" type="x-shader/x-vertex">
+      varying vec2 vUv;
+          uniform sampler2D tBase;
+          uniform sampler2D tGlow;
+          void main() {
+            //Screen: X = 1- ((255-U)*(255-L))/255
+            //vec4 color = 1.0 - ( ( 1.0 - texture2D( tGlow, vec2( vUv.x, vUv.y ) ) ) * ( 1.0 - texture2D( tBase, vUv ) ) );
+            //vec4 color = mix( texture2D( tBase, vUv ), texture2D( tGlow, vec2( vUv.x, 1.0 - vUv.y ) ), .5 );
+            //vec4 color = texture2D( tBase, vUv ) + texture2D( tGlow, vUv ) * texture2D( tGlow, vUv );
+            vec4 color = texture2D( tGlow, vUv );
+            gl_FragColor = vec4( color.rgb, 1.0 );
+          }
+    </script>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/95/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>
+
+    <script src="./js/moonsetup.js"></script>
+  </body>
+</html>
