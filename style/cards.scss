@@ -1,0 +1,167 @@
+.cards {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url('../images/Noise.png'),
+    url('../images/right_green_circle.svg'),
+    url('../images/bottom_green_circle.svg'),
+    linear-gradient(180deg, rgba(253, 255, 246, 0) 0%, #fdfff6 100%);
+  background-position: left, right bottom -300px, left 300px bottom, center;
+  background-repeat: no-repeat;
+  background-size: 100%, contain, contain, contain;
+}
+.card-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards-main-title {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: $nearBlack;
+  margin-top: 76px;
+  padding: 0 40px;
+}
+.cards-main-text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $gray;
+  margin-top: 24px;
+  max-width: 672px;
+  padding: 0 40px;
+}
+.cards-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 56px;
+  margin-top: 56px;
+}
+.card {
+  padding: 34px 60px 44px 32px;
+}
+.card-title {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: $nearBlack;
+  margin-top: 28px;
+}
+.card-text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray;
+  margin-top: 18px;
+}
+footer {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+  margin-top: 160px;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.footer-flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.logo-flex-box {
+  display: flex;
+  align-items: center;
+  span {
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $nearBlack;
+    margin-left: 28px;
+  }
+  p {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $nearBlack;
+  }
+  a {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #757575;
+    margin-left: 18px;
+  }
+}
+.project-name {
+  display: none;
+  text-align: center;
+  font-family: Neue Montreal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $nearBlack;
+  margin-left: 28px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 930px) {
+  .cards-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 16px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .logo-flex-box {
+    span {
+      display: none;
+    }
+  }
+  .project-name {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 614px) {
+  .cards-grid-container {
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+  }
+  footer {
+    margin-top: 40px;
+  }
+  .logo-flex-box {
+    display: block;
+    a {
+      margin-left: 0;
+    }
+  }
+}
+@media only screen and (max-width: 442px) {
+  .cards {
+    display: none;
+  }
+}

@@ -31,8 +31,8 @@ var groupMoon = new THREE.Object3D();
 
 //--------------------------------------------------------------------
 function createWorld() {
-  _width = window.innerWidth;
-  _height = window.innerHeight;
+  _width = document.querySelector('.sphere-container').offsetWidth;
+  _height = document.querySelector('.sphere-container').offsetHeight;
   //---
   scene = new THREE.Scene();
   scene.fog = new THREE.Fog(Theme._dark, 150, 320);
@@ -43,11 +43,8 @@ function createWorld() {
   camera.position.set(0, 0, 150);
   //---
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
-  const containerWidth =
-    document.querySelector('.sphere-container').offsetWidth;
-  const containerHeight =
-    document.querySelector('.sphere-container').offsetHeight;
-  renderer.setSize(containerWidth, containerHeight);
+
+  renderer.setSize(_width, _height);
   renderer.shadowMap.enabled = true;
   //---
   document
@@ -59,9 +56,9 @@ function createWorld() {
   console.log(_width);
 }
 function onWindowResize() {
-  _width = window.innerWidth;
-  _height = window.innerHeight;
-  renderer.setSize(containerWidth, containerHeight);
+  _width = document.querySelector('.sphere-container').offsetWidth;
+  _height = document.querySelector('.sphere-container').offsetHeight;
+  renderer.setSize(_width, _height);
   camera.aspect = 1;
   camera.updateProjectionMatrix();
 }

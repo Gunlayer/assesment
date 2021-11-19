@@ -15,9 +15,17 @@
   </head>
   <body>
     <header>
+      <div class="mobile-container">
+        <div class="mobile-logo-container">
+          <img src="./images/mobile_logo.svg" alt="logo" />
+        </div>
+        <div class="mobile-main-title">No Mobile Experience</div>
+        <div class="mobile-text">
+          EAT only supports desktop experience for now. We know it is not ideal
+          - but we are on it. Enjoy the full experience on the desktop.
+        </div>
+      </div>
       <div class="header-container">
-        <div class="red-bg-circle"></div>
-        <div class="blue-bg-circle"></div>
         <div class="container-small">
           <div class="logo-container">
             <img class="logo-img" src="./images/Logo.svg" alt="logo" />
@@ -26,13 +34,17 @@
         <div class="animation-container">
           <h1 class="main-title">Create high-quality assessments, fast</h1>
           <div class="undertitle-box">
-            <div class="sign-in-btn">
-              <img
-                src="./images/windows.svg"
-                alt="icon"
-                class="icon-btn-image"
-              />
-              Sign in with microsoft
+            <div class="btn-stiky-container">
+              <div class="rail-container">
+                <div class="sign-in-btn">
+                  <img
+                    src="./images/windows.svg"
+                    alt="icon"
+                    class="icon-btn-image"
+                  />
+                  Sign in with microsoft
+                </div>
+              </div>
             </div>
             <div class="icon-text-flexbox">
               <div class="icon-container">
@@ -352,7 +364,125 @@
         </div>
       </div>
     </header>
+    <section class="content">
+      <div class="noice-container">
+        <div class="content-container">
+          <img src="./images/content/Content.png" alt="content" />
+          <div class="profile-score">
+            <img
+              src="./images/content/Profile score card.png"
+              alt="profiler-score"
+            />
+          </div>
+          <div class="developer-quiz">
+            <img
+              src="./images/content/Developer quiz.png"
+              alt="developer-quiz"
+            />
+          </div>
+          <div class="process">
+            <img src="./images/content/Faster hiring....png" alt="process" />
+          </div>
+          <div class="questions">
+            <img src="./images/content/Quastion.png" alt="questions" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="card-container">
+        <div class="graph-element">
+          <img src="./images/Vector.svg" alt="vector" />
+        </div>
+        <h2 class="cards-main-title">All in one central tool</h2>
+        <p class="cards-main-text">
+          No more needed email automation, spreadsheets, csv imports/exports,
+          calendar reminders, etc Keep up with candidate and make faster
+          decisions to offer the best candidate experience. Anywhere you are.
+        </p>
+        <div class="cards-grid-container">
+          <div class="card">
+            <div class="card-icon">
+              <img src="./images/card_icons/note.svg" alt="" />
+            </div>
+            <h3 class="card-title">Powerful template builder</h3>
+            <p class="card-text">
+              Make custom online tests and find the perfect candidate for you
+              for any position role.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="./images/card_icons/code.svg" alt="cade" />
+            </div>
+            <h3 class="card-title">Automated evaluation</h3>
+            <p class="card-text">
+              Put more success into your business by automating your workflows
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="./images/card_icons/link.svg" alt="link" />
+            </div>
+            <h3 class="card-title">
+              Possibility to integrate with other tools and needs
+            </h3>
+            <p class="card-text">
+              Speed up your hiring process by never having to switch between
+              tools again
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="./images/card_icons/chart-success.svg" alt="success" />
+            </div>
+            <h3 class="card-title">Asses of technical and cultural fit</h3>
+            <p class="card-text">
+              Helping employees be smarter by creating cutting-edge online tests
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="./images/card_icons/trend-up.svg" alt="trend-up" />
+            </div>
+            <h3 class="card-title">Rich reporting & analytics</h3>
+            <p class="card-text">
+              We provide complete control over your assessments
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img
+                src="./images/card_icons/mouse-square.svg"
+                alt="mouse-square"
+              />
+            </div>
+            <h3 class="card-title">Assessment unified process</h3>
+            <p class="card-text">
+              The hiring process doesn't have to be so inflexible and
+              time-consuming
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="divider"></div>
+        <div class="footer-flex-box">
+          <div class="logo-flex-box">
+            <img src="./images/Logo_footer.svg" alt="logo" />
+            <span>2021 © assessment</span>
+          </div>
+          <div class="logo-flex-box">
+            <p>Report a bug or ask any quastions:</p>
+            <a href="#">entestingserviceacc@endava.co</a>
+          </div>
+        </div>
+        <span class="project-name">2021 © assessment</span>
+      </footer>
+    </section>
+
     <script src="./js/getSelectedIconText.js"></script>
+    <script src="./js/paralax.js"></script>
 
     <script id="vertexShader" type="x-shader/x-vertex">
       void main() {

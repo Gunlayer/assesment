@@ -1,0 +1,43 @@
+.content {
+  margin-top: -29%;
+}
+.noice-container {
+  max-width: 1440px;
+  background-image: url('../images/Noise.png');
+  background-size: 100%;
+  margin: 0 auto;
+}
+.content-container {
+  max-width: 1290px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+  position: relative;
+}
+.profile-score {
+  position: absolute;
+  top: 220px;
+  left: -80px;
+}
+.developer-quiz {
+  position: absolute;
+  top: 420px;
+  left: -80px;
+}
+.process {
+  position: absolute;
+  top: 290px;
+  right: -90px;
+}
+.questions {
+  position: absolute;
+  top: 520px;
+  right: 25px;
+}
+
+@media only screen and (max-width: 442px) {
+  .content {
+    display: none;
+  }
+}
