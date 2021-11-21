@@ -1,5 +1,5 @@
 .content {
-  margin-top: -29%;
+  margin-top: -520px;
 }
 .noice-container {
   max-width: 1440px;
@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 .content-container {
-  max-width: 1290px;
+  width: 1290px;
   margin: 0 auto;
   img {
     width: 100%;
@@ -34,6 +34,13 @@
   position: absolute;
   top: 520px;
   right: 25px;
+}
+@media only screen and (max-width: 1290px) {
+  .content-container {
+    margin: unset;
+    position: relative;
+    left: calc(100% - 1290px);
+  }
 }
 
 @media only screen and (max-width: 442px) {

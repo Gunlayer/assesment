@@ -5,7 +5,7 @@ function init() {
   createWorld();
   createLights();
   createGrid();
-  // createGUI();
+  //createGUI();
   createSkin();
   createLife();
 }
