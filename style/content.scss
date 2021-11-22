@@ -35,11 +35,48 @@
   top: 520px;
   right: 25px;
 }
+@media only screen and (max-width: 1452px) {
+  .process {
+    right: -50px;
+  }
+  .profile-score {
+    left: -30px;
+  }
+  .developer-quiz {
+    left: -30px;
+  }
+}
 @media only screen and (max-width: 1290px) {
   .content-container {
     margin: unset;
     position: relative;
-    left: calc(100% - 1290px);
+    left: calc(95% - 1290px);
+  }
+  .process {
+    right: -10px;
+  }
+  .profile-score {
+    left: 5%;
+  }
+  .developer-quiz {
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .profile-score {
+    top: 140px;
+    left: auto;
+    right: -20px;
+  }
+  .developer-quiz {
+    display: none;
+  }
+  .questions {
+    display: none;
+  }
+  .process {
+    right: -25x;
+    top: 380px;
   }
 }
 

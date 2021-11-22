@@ -4,23 +4,52 @@ const createParalaxEffect = () => {
   const processEl = document.querySelector('.process');
   const questions = document.querySelector('.questions');
 
-  const getInitialTop = (element) => {
-    const top = window.getComputedStyle(element).top;
-    const result = top.split('').filter((item) => !isNaN(item));
-    return +result.join('');
+  const profilerDistance = { topLeft: 220, topRight: 140 };
+  const developerDistance = { topLeft: 420, topRight: 420 };
+  const processDistance = { topLeft: 290, topRight: 380 };
+  const questionsDistance = { topLeft: 520, topRight: 520 };
+
+  const setElementTop = (element, value) => {
+    if (document.documentElement.clientWidth <= 1200) {
+      element.style.top = `${element.getAttribute('topr')}px`;
+      return value.topRight;
+    } else {
+      element.style.top = `${element.getAttribute('topl')}px`;
+      return value.topLeft;
+    }
   };
-  const topProfiler = getInitialTop(profilerEl);
-  const topDev = getInitialTop(developerEl);
-  const topProces = getInitialTop(processEl);
-  const topQuestions = getInitialTop(questions);
+
+  const setElementAttribute = (element, value, speed) => {
+    element.setAttribute('topl', `${speed + value.topLeft}`);
+    element.setAttribute('topr', `${speed + value.topRight}`);
+  };
+
+  const resizeHandler = () => {
+    const result = {
+      leftTopEl: setElementTop(profilerEl, profilerDistance),
+      leftBotEl: setElementTop(developerEl, developerDistance),
+      rightTopEl: setElementTop(processEl, processDistance),
+      rightBotEl: setElementTop(questions, questionsDistance),
+    };
+
+    return result;
+  };
 
   const scrollHandler = () => {
-    profilerEl.style.top = `${window.scrollY * 0.06 + topProfiler}px`;
-    developerEl.style.top = `${window.scrollY * 0.09 + topDev}px`;
-    processEl.style.top = `${window.scrollY * 0.07 + topProces}px`;
-    questions.style.top = `${window.scrollY * 0.08 + topQuestions}px`;
-  };
+    const speed = window.scrollY * 0.15;
 
+    setElementAttribute(profilerEl, profilerDistance, speed);
+    setElementAttribute(developerEl, developerDistance, speed);
+    setElementAttribute(processEl, processDistance, speed);
+    setElementAttribute(questions, questionsDistance, speed);
+
+    profilerEl.style.top = `${speed + resizeHandler().leftTopEl}px`;
+    developerEl.style.top = `${speed + resizeHandler().leftBotEl}px`;
+    processEl.style.top = `${speed + resizeHandler().rightTopEl}px`;
+    questions.style.top = `${speed + resizeHandler().rightBotEl}px`;
+  };
+  window.addEventListener('resize', resizeHandler);
   window.addEventListener('scroll', scrollHandler);
 };
+
 createParalaxEffect();
